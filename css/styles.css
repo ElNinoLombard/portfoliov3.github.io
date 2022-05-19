@@ -92,6 +92,7 @@ a {
     width: 200px;
     padding: 20px 50px;
     background-color: var(--secondary-color);
+    clip-path: polygon(0 0, 51% 0, 100% 100%, 0 100%);
 }
 
 .home-container .left img {

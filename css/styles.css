@@ -27,6 +27,8 @@ body {
     background-color: var(--primary-color);
 }
 
+/* NAVBAR START*/
+
 .navbar {
     position: fixed;
     display: flex;
@@ -38,7 +40,6 @@ body {
     right: 10px;
 }
 
-/* NAVBAR */
 .navbar a {
     opacity: 60%;
     border-radius: 50%;
@@ -48,9 +49,10 @@ body {
     align-items: center;
     justify-content: center;
     background-color: var(--terciary-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.navbar a:hover {
+.navbar a:hover, .navbar a .active{
     opacity: 100%;
 }
 
@@ -69,3 +71,80 @@ a {
     display: inline-block;
 }
 
+/* NAVBAR END*/
+
+
+/*  HOME CONTAINER START*/
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.home-container .left {
+    width: calc(50% - 40px);
+}
+
+.home-container .image-contour {
+    position: absolute;
+    height: 500px;
+    width: 200px;
+    padding: 20px 50px;
+    background-color: var(--secondary-color);
+}
+
+.home-container .left img {
+    height: 500px;
+    position: relative;
+    padding: 20px 30px;
+    border-radius: 45px;
+}
+
+.home-container .right {
+    width: calc(50% - 40px);
+}
+
+/* NAME ANIMATION START */
+.home-container .right .name {
+    color: white;
+    position: relative;
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    width: max-content;
+}
+
+.home-container .right .name::before, .home-container .right .name::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.home-container .right .name::before {
+    background-color: var(--primary-color);
+    animation: typewriter 3s steps(26) 1s forwards;
+}
+
+.home-container .right .name::after {
+    width: 0.125em;
+    background: white;
+    animation: 
+        typewriter 3s steps(26) 1s forwards, 
+        blink 350ms steps(26) infinite;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+/* NAME ANIMATION END */

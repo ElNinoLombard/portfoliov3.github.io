@@ -295,7 +295,7 @@ a {
     margin: 150px auto;
 }
 
-.timeline .sec-header {
+.timeline .title {
     margin-bottom: 150px;
     text-align: center;
     color: white;
@@ -303,7 +303,7 @@ a {
     margin-top: 20px;
 }
 
-.timeline .sec-header span {
+.timeline .title span {
     margin-bottom: 150px;
     text-align: center;
     color: var(--secondary-color);
@@ -404,10 +404,110 @@ a {
     margin-bottom: 20px;
 }
 /*-----------------------------------  ABOUT CONTAINER TIMELINE END -----------------------------------*/
-
-
-
 /*-----------------------------------  ABOUT CONTAINER END -----------------------------------*/
+
+/*-----------------------------------  PROJECT CONTAINER START -----------------------------------*/
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 30px 10px;
+}
+
+.projects .title {
+    margin-bottom: 150px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.projects .title span {
+    margin-bottom: 150px;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.projets-header {
+    font-size: 100px;
+    background: var(--secondary-color);
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    color: var(--terciary-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 9px transparent;
+}
+
+.carte-projets {
+    height: 400px;
+    position: relative;
+}
+
+.projet-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.carte-projets:hover .projet-img{
+    filter: blur(10px);
+}
+
+.content-projets {
+    opacity: 0;
+    position: relative;
+    padding: 50px;
+    color: var(--secondary-color);
+    transition: 0.5s;
+}
+
+.carte-projets:hover .content-projets {
+    opacity: 1;
+    transform: translateY(30px);
+    transition: transform 0.5s;
+}
+
+.titre-projet {
+    font-size: 60px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 300;
+}
+
+.texte-projet {
+   margin: 40px;
+   font-size: 20px;
+   line-height: 30px;
+   text-align: center; 
+}
+
+.projet-button-groupe {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+
+.projet-button {
+    height: 45px;
+    text-transform: capitalize;
+    font-size: 18px;
+    border: none;
+    background-color: black;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+
+
+/*-----------------------------------  PROJECT CONTAINER END -----------------------------------*/
 
 /*-----------------------------------  RESPONSIVENESS START -----------------------------------*/
 
@@ -431,7 +531,10 @@ a {
     .about-container img {
         align-self: center;
     }
-}
+
+    .projects-container {
+        grid-template-columns: repeat(1,1fr);
+    }
 
 @media (max-width: 800px) {
     .home-container .column{

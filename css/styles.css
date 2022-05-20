@@ -300,7 +300,7 @@ a {
     text-align: center;
     color: white;
     font-size: 40px;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .timeline .title span {
@@ -420,7 +420,7 @@ a {
     text-align: center;
     color: white;
     font-size: 40px;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .projects .title span {
@@ -508,6 +508,44 @@ a {
 
 
 /*-----------------------------------  PROJECT CONTAINER END -----------------------------------*/
+/*-----------------------------------  SKILLS CONTAINER START -----------------------------------*/
+
+.skills .title {
+    margin-bottom: 150px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+.skills .title span {
+    margin-bottom: 150px;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.skills-container img {
+    height: 450px;
+    width: 650px;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+
+}
+
+/*-----------------------------------  SKILLS CONTAINER END -----------------------------------*/
 
 /*-----------------------------------  RESPONSIVENESS START -----------------------------------*/
 

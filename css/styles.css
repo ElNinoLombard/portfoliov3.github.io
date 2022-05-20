@@ -300,7 +300,7 @@ a {
     text-align: center;
     color: white;
     font-size: 40px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .timeline .sec-header span {
@@ -312,13 +312,13 @@ a {
 }
 
 .carte {
-    opacity: 60%;
+    opacity: 70%;
     width: 45%;
     padding: 30px;
     border-radius: 20px;
     color: white;
     display: block;
-    margin: 0;
+    margin: 30px;
     position: relative;
     background: var(--primary-color);
     transition: 250ms ease-in-out;
@@ -337,7 +337,7 @@ a {
 .carte:nth-child(even):before {
     content: '';
     position: absolute;
-    left: -15%;
+    left: -10%;
     top: 50%;
     transform: translateY(-50%);
     width: 20px;
@@ -349,7 +349,7 @@ a {
 .carte:nth-child(even):after {
     content: '';
     position: absolute;
-    left: -8.5%;
+    left: -7%;
     top: 50%;
     transform: translateY(-50%);
     width: 7%;
@@ -361,7 +361,7 @@ a {
 .carte:nth-child(odd):before {
     content: '';
     position: absolute;
-    right: -13%;
+    right: -12%;
     top: 50%;
     transform: translateY(-50%);
     width: 20px;
@@ -423,11 +423,33 @@ a {
     .home-container {
         gap: 20px;
     }
+
+    .about-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .about-container img {
+        align-self: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .home-container .column{
+        width: 100%;
+    }
+
+    .about-container {
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 @media (max-width: 740px) {
     .home-container .column{
         width: 100%;
+    }
+
+    .about-container {
+        grid-template-columns: repeat(1,1fr);
     }
 }
 /*-----------------------------------  RESPONSIVENESS END -----------------------------------*/

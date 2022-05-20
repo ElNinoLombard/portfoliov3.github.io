@@ -535,6 +535,7 @@ a {
     .projects-container {
         grid-template-columns: repeat(1,1fr);
     }
+}
 
 @media (max-width: 800px) {
     .home-container .column{

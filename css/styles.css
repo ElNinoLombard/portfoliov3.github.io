@@ -572,9 +572,10 @@ a {
 .nav-manual {
     position: absolute;
     width: 800px;
-    margin-top: -40px;
+    margin-top: 550px;
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .manual-button {
@@ -614,6 +615,49 @@ a {
 #radio7:checked ~ .first {
     margin-left: -120%;
 }
+
+.nav-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 550px;
+    padding-bottom: 50px;
+}
+
+.nav-auto div {
+    border: 2px solid var(--secondary-color);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.nav-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1 {
+    background: var(--secondary-color);
+}
+#radio2:checked ~ .nav-auto .auto-btn2 {
+    background: var(--secondary-color);
+}
+#radio3:checked ~ .nav-auto .auto-btn3 {
+    background: var(--secondary-color);
+}
+#radio4:checked ~ .nav-auto .auto-btn4 {
+    background: var(--secondary-color);
+}
+#radio5:checked ~ .nav-auto .auto-btn5 {
+    background: var(--secondary-color);
+}
+#radio6:checked ~ .nav-auto .auto-btn6 {
+    background: var(--secondary-color);
+}
+#radio7:checked ~ .nav-auto .auto-btn7 {
+    background: var(--secondary-color);
+}
+
 /*-----------------------------------  SKILLS CONTAINER END -----------------------------------*/
 
 /*-----------------------------------  RESPONSIVENESS START -----------------------------------*/

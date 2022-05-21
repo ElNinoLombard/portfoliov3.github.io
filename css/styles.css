@@ -686,6 +686,14 @@ a {
     .projects-container {
         grid-template-columns: repeat(1,1fr);
     }
+    .slide img {
+        width: 800px;
+        height: 400px;
+    }
+
+    .nav-auto, .nav-manual {
+       width: 800; 
+    }
 }
 
 @media (max-width: 800px) {
@@ -696,6 +704,15 @@ a {
     .about-container {
         grid-template-columns: repeat(1,1fr);
     }
+
+    .slide img {
+        width: 600px;
+        height: 200px;
+    }
+
+    .nav-auto, .nav-manual {
+        width: 600; 
+     }
 }
 
 @media (max-width: 740px) {
@@ -706,5 +723,14 @@ a {
     .about-container {
         grid-template-columns: repeat(1,1fr);
     }
+
+    .slide img {
+        width: 500px;
+        height: 100px;
+    }
+
+    .nav-auto, .nav-manual {
+        width: 500; 
+     }
 }
 /*-----------------------------------  RESPONSIVENESS END -----------------------------------*/

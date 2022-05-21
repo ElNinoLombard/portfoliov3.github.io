@@ -23,6 +23,10 @@
     border-radius: 30px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Titillium Web', sans-serif;
 }
@@ -223,16 +227,6 @@ a {
     justify-content: center;
 }
 
-.home-container .right .cv-button .button-icon .fa-solid{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70px;
-    width: 70px;
-    background: var(--secondary-color);
-    border-radius: 50%;
-}
-
 /*-----------------------------------  HOME CONTAINER END -----------------------------------*/
 
 /*-----------------------------------  ABOUT CONTAINER START -----------------------------------*/
@@ -242,6 +236,19 @@ a {
     font-weight: 700;
     text-align: center;
     color: white;
+    margin-top: 300px;
+}
+
+.about-me .title .bg-text {
+    opacity: 30%;
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: 800;
+    z-index: -1;
+    color: var(--terciary-color);
 }
 
 .about-me .title h2 {
@@ -300,7 +307,7 @@ a {
     text-align: center;
     color: white;
     font-size: 40px;
-    margin-top: 100px;
+    margin-top: 300px;
 }
 
 .timeline .title span {
@@ -308,7 +315,19 @@ a {
     text-align: center;
     color: var(--secondary-color);
     font-size: 40px;
-    margin-top: 50px;
+    margin-top: 300px;
+}
+
+.timeline .title .bg-text {
+    opacity: 30%;
+    position: absolute;
+    top: 165%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: 800;
+    z-index: -1;
+    color: var(--terciary-color);
 }
 
 .carte {
@@ -424,7 +443,7 @@ a {
     text-align: center;
     color: white;
     font-size: 40px;
-    margin-top: 100px;
+    margin-top: 300px;
 }
 
 .projects .title span {
@@ -432,7 +451,19 @@ a {
     text-align: center;
     color: var(--secondary-color);
     font-size: 40px;
-    margin-top: 50px;
+    margin-top: 300px;
+}
+
+.projects .title .bg-text {
+    opacity: 30%;
+    position: absolute;
+    top: 304%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: 800;
+    z-index: -1;
+    color: var(--terciary-color);
 }
 
 .projets-header {
@@ -526,7 +557,7 @@ a {
     text-align: center;
     color: white;
     font-size: 40px;
-    margin-top: 100px;
+    margin-top: 300px;
 }
 
 .skills .title span {
@@ -535,6 +566,18 @@ a {
     color: var(--secondary-color);
     font-size: 40px;
     margin-top: 50px;
+}
+
+.skills .title .bg-text {
+    opacity: 30%;
+    position: absolute;
+    top: 473%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: 800;
+    z-index: -1;
+    color: var(--terciary-color);
 }
 
 .skills-container img {
@@ -659,7 +702,135 @@ a {
 }
 
 /*-----------------------------------  SKILLS CONTAINER END -----------------------------------*/
+/*-----------------------------------  CONTACT ME CONTAINER START -----------------------------------*/
 
+.contact-me-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 60px 10px;
+}
+
+.contact-me-container .left {
+    width: calc(45% - 30px);
+}
+
+.contact-me .title {
+    margin-bottom: 150px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 300px;
+}
+
+.contact-me .title span {
+    margin-bottom: 150px;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 40px;
+}
+
+.contact-me .title .bg-text {
+    opacity: 30%;
+    position: absolute;
+    top: 585%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: 800;
+    z-index: -1;
+    color: var(--terciary-color);
+}
+
+.contact-me-container .left h2 {
+    color: white;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.contact-me-container p {
+    color: var(--text-color);
+    font-size: 22px;
+}
+
+.contact-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.contact-items > p {
+    color: var(--subtitle-color);
+    font-size: 25px;
+}
+
+.contact-me-container .right {
+    width: calc(55% - 30px);
+}
+
+.map-container {
+    display: grid;
+    height: 600px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 30px 10px;
+    padding-right: 100px;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 2px solid var(--secondary-color);
+    background: var(--terciary-color);
+    border-radius: 50px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 45px;
+}
+
+.fa-solid, a:visited {
+    text-decoration: none;
+    font-size: 26px;
+    color: white;
+    padding: 10px;
+}
+/*-----------------------------------  CONTACT ME CONTAINER END -----------------------------------*/
+/*-----------------------------------  TO THE TOP START -----------------------------------*/
+
+.to-top {
+    background-color: var(--secondary-color);
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+/*-----------------------------------  TO THE TOP END -----------------------------------*/
 /*-----------------------------------  RESPONSIVENESS START -----------------------------------*/
 
 @media (max-width: 1000px) {
@@ -731,6 +902,10 @@ a {
 
     .nav-auto, .nav-manual {
         width: 500; 
+     }
+
+     .contact-me .column {
+         width: 100%;
      }
 }
 /*-----------------------------------  RESPONSIVENESS END -----------------------------------*/

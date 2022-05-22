@@ -1,0 +1,36 @@
+
+:root {
+    --primary-color: #06214d;
+    --secondary-color: #d67010;
+    --terciary-color: #676A6F;
+    --subtitle-color: #E6E9F0;
+    --text-color: #EAEAEA;
+    --typewriterSpeed: 3s;
+    --headerLength: 26;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+}

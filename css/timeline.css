@@ -1,0 +1,130 @@
+.timeline {
+    display: block;
+    width: 80%;
+    margin: 150px auto;
+}
+
+.timeline .title {
+    margin-bottom: 150px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-top: 300px;
+}
+
+.timeline .title span {
+    margin-bottom: 150px;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 40px;
+    margin-top: 300px;
+}
+
+.timeline .title .bg-text {
+    opacity: 30%;
+    position: absolute;
+    top: 165%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: 800;
+    z-index: -1;
+    color: var(--terciary-color);
+}
+
+.carte {
+    opacity: 60%;
+    width: 45%;
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    display: block;
+    margin: 30px;
+    position: relative;
+    background: var(--primary-color);
+    transition: 250ms ease-in-out;
+}
+
+.carte:hover {
+    opacity: 100%;
+    width: 60%;
+    transition: 250ms ease-in-out;
+}
+
+.carte:nth-child(even) {
+    margin-left: auto;
+}
+
+.carte:nth-child(even):before {
+    content: '';
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 5px solid var(--secondary-color) ;
+    border-radius: 50%;
+}
+
+.carte:nth-child(even):after {
+    content: '';
+    position: absolute;
+    left: -7%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7%;
+    height: 2px;
+    background: var(--secondary-color);
+    z-index: -1;
+}
+
+.carte:nth-child(odd):before {
+    content: '';
+    position: absolute;
+    right: -12%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 5px solid var(--secondary-color) ;
+    border-radius: 50%;
+}
+
+.carte:nth-child(odd):after {
+    content: '';
+    position: absolute;
+    right: -8%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8%;
+    height: 2px;
+    background: var(--secondary-color);
+    z-index: -1;
+}
+
+.carte:nth-child(2), .carte:nth-child(3), .carte:nth-child(4), .carte:nth-child(5) {
+    background: var(--terciary-color);
+}
+
+.carte:nth-child(2):hover, .carte:nth-child(2):before {
+    background: #d14a4a;
+}
+
+.carte:nth-child(3):hover, .carte:nth-child(3):before {
+    background: #68315a;
+}
+
+.carte:nth-child(4):hover, .carte:nth-child(4):before {
+    background: #6d162b;
+}
+
+.carte:nth-child(5):hover, .carte:nth-child(5):before {
+    background: #51b169;
+}
+
+.carte-titre {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}

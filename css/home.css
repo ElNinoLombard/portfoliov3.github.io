@@ -1,0 +1,142 @@
+.home {
+    margin-bottom: 100px;
+}
+
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.home-container .left {
+    width: calc(50% - 40px);
+}
+
+.home-container .image-contour {
+    position: absolute;
+    height: 500px;
+    width: 200px;
+    padding: 20px 50px;
+    background-color: var(--secondary-color);
+    clip-path: polygon(0 0, 51% 0, 100% 100%, 0 100%);
+}
+
+.home-container .left img {
+    height: 500px;
+    position: relative;
+    padding: 20px 30px;
+    border-radius: 45px;
+}
+
+.home-container .right {
+    width: calc(50% - 40px);
+}
+
+/*--------------------------- ANIMATION HEADER ---------------------------*/
+
+.home-container .right .name {
+    color: white;
+    position: relative;
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    width: max-content;
+}
+
+.home-container .right .name::before, .home-container .right .name::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.home-container .right .name::before {
+    background-color: var(--primary-color);
+    animation: typewriter var(--typewriterSpeed) steps(var(--headerLength)) 1s forwards;
+}
+
+.home-container .right .name::after {
+    width: 0.125em;
+    background: white;
+    animation: 
+        typewriter var(--typewriterSpeed) steps(var(--headerLength)) 1s forwards, 
+        blink 350ms steps(var(--headerLength)) infinite;
+}
+
+.home-subtitle {
+    color: var(--subtitle-color);
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 1s) forwards;
+}
+
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home-container .right .button {
+    display: flex;
+    align-self: flex-start;
+}
+
+.home-container .right .cv-button {
+    position: relative;
+    display: flex;
+    align-self: flex-start;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    margin-top: 30px;
+    text-transform: capitalize;
+    border: none; 
+    outline: none;
+    font-size: 17px;
+    font-weight: 900; 
+    color: white;
+    border-radius: 30px;
+    height: 50px;
+    width: 180px;
+    background: var(--secondary-color);
+    transition: 0.5s ease;
+}
+
+.home-container .right .cv-button:hover {
+    cursor: pointer;
+    background: var(--secondary-color); /* here, when we hover over the button we'll create the effect of it "lightning up" */
+    box-shadow: 0 0 10px var(--secondary-color), /* ici qu'on passera la souris sur le bouton on lui donnera l'effet "brillant"*/
+                0 0 40px var(--secondary-color),  /* et ici on lui donnera l'effet de la lumière se dispersant */
+                0 0 120px var(--secondary-color), /* here we'll give the effect of the light scaterring */
+                0 0 300px var(--secondary-color);
+}
+
+.home-container .right .cv-button .button-text {
+    padding: 0 20px;
+}
+
+.home-container .right .cv-button .button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

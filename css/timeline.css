@@ -45,6 +45,10 @@
     transition: 250ms ease-in-out;
 }
 
+.carte-info {
+    font-size: 100%;
+}
+
 .carte:hover {
     opacity: 100%;
     width: 60%;
@@ -82,7 +86,7 @@
 .carte:nth-child(odd):before {
     content: '';
     position: absolute;
-    right: -12%;
+    right: -10%;
     top: 50%;
     transform: translateY(-50%);
     width: 20px;
@@ -108,19 +112,19 @@
 }
 
 .carte:nth-child(2):hover, .carte:nth-child(2):before {
-    background: #d14a4a;
+    background: var(--secondary-color);
 }
 
 .carte:nth-child(3):hover, .carte:nth-child(3):before {
-    background: #68315a;
+    background: var(--secondary-color);
 }
 
 .carte:nth-child(4):hover, .carte:nth-child(4):before {
-    background: #6d162b;
+    background: var(--secondary-color);
 }
 
 .carte:nth-child(5):hover, .carte:nth-child(5):before {
-    background: #51b169;
+    background: var(--secondary-color);
 }
 
 .carte-titre {

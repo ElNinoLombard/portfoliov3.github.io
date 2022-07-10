@@ -89,26 +89,36 @@
     background-color: var(--secondary-color);
 }
 
-#radio1:checked ~ .first {
+#radio1:checked~.first {
     margin-left: 0;
 }
-#radio2:checked ~ .first {
+
+#radio2:checked~.first {
     margin-left: -20%;
 }
-#radio3:checked ~ .first {
+
+#radio3:checked~.first {
     margin-left: -40%;
 }
-#radio4:checked ~ .first {
+
+#radio4:checked~.first {
     margin-left: -60%;
 }
-#radio5:checked ~ .first {
+
+#radio5:checked~.first {
     margin-left: -80%;
 }
-#radio6:checked ~ .first {
+
+#radio6:checked~.first {
     margin-left: -100%;
 }
-#radio7:checked ~ .first {
+
+#radio7:checked~.first {
     margin-left: -120%;
+}
+
+#radio8:checked~.first {
+    margin-left: -140%;
 }
 
 .nav-auto {
@@ -131,24 +141,34 @@
     margin-right: 40px;
 }
 
-#radio1:checked ~ .nav-auto .auto-btn1 {
+#radio1:checked~.nav-auto .auto-btn1 {
     background: var(--secondary-color);
 }
-#radio2:checked ~ .nav-auto .auto-btn2 {
+
+#radio2:checked~.nav-auto .auto-btn2 {
     background: var(--secondary-color);
 }
-#radio3:checked ~ .nav-auto .auto-btn3 {
+
+#radio3:checked~.nav-auto .auto-btn3 {
     background: var(--secondary-color);
 }
-#radio4:checked ~ .nav-auto .auto-btn4 {
+
+#radio4:checked~.nav-auto .auto-btn4 {
     background: var(--secondary-color);
 }
-#radio5:checked ~ .nav-auto .auto-btn5 {
+
+#radio5:checked~.nav-auto .auto-btn5 {
     background: var(--secondary-color);
 }
-#radio6:checked ~ .nav-auto .auto-btn6 {
+
+#radio6:checked~.nav-auto .auto-btn6 {
     background: var(--secondary-color);
 }
-#radio7:checked ~ .nav-auto .auto-btn7 {
+
+#radio7:checked~.nav-auto .auto-btn7 {
+    background: var(--secondary-color);
+}
+
+#radio8:checked~.nav-auto .auto-btn8 {
     background: var(--secondary-color);
 }

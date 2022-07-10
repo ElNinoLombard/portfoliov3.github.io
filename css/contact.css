@@ -57,7 +57,7 @@
     font-size: 18px;
 }
 
-.contact-items > p {
+.contact-items>p {
     color: var(--subtitle-color);
     font-size: 25px;
 }
@@ -90,7 +90,8 @@
     border-radius: 45px;
 }
 
-.fa-solid, a:visited {
+.fa-solid,
+a:visited {
     text-decoration: none;
     font-size: 26px;
     color: white;
